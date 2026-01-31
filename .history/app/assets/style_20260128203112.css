@@ -1,0 +1,137 @@
+/*Fonts */
+
+@font-face {
+    font-family: 'Avigea';
+    src: url('/assets/fonts/Avigea.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url('/assets/fonts/Avigea Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*Contenedores*/
+
+.contenedor-header{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-footer{
+    border: 2px solid black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+.fondo-movil{
+    position: absolute;
+    inset: 0;
+    width: 200%;              
+    height: 100%;
+
+    background-image: url("/header/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    animation: mover-fondo 20s linear infinite;
+    z-index: 0;
+}
+
+.logo-imagen{
+    margin-left: 10px; 
+    border-radius: 100%; 
+    z-index: 2;
+}
+.psico{
+    margin-left: 20px; 
+    font-family: 'Avigea'; 
+    font-weight: 400; 
+    font-style: normal; 
+    display: inline-block; 
+    z-index: 1; 
+    font-size: 60px;
+    margin-right: -30px;
+}
+.vibes{
+    margin-left: 20px; 
+    font-family: 'Italic'; 
+    font-weight: 400; 
+    font-style: normal; 
+    display: inline-block; 
+    z-index: 1; 
+    font-size: 60px;
+}
+h3{
+    font-family: 'SN Pro', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+}
+.primer-elemento{
+    margin-left: auto;
+    margin-right: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+.demas-elementos{
+    margin: 0px 50px 0px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.content{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+@keyframes mover-fondo {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
