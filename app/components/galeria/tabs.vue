@@ -18,7 +18,7 @@ import Grid from './grid.vue';
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-sectores" role="tabpanel" aria-labelledby="pills-sectores-tab"><Grid :direcciones="['/Galeria/SectorAsesoria.jpg', '/Galeria/SectorColectivos.jpg', '/Galeria/SectorEducativo.jpg','/Galeria/SectorEmpresarial.jpg']" :numRows="2" :numCols="2"/></div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><Grid :direcciones="['/Galeria/DiaDeLosMuertos.webp', '/Galeria/DiaMundialDeLaSaludMental.jpg', '/Galeria/DiaMundialDepresion.webp']" :num-rows="1" :num-cols="3"/></div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><Grid :direcciones="['/Galeria/Dignidad.jpeg', '/Galeria/Tolerancia.jpeg']" :num-rows="1" :num-cols="2"/></div>
     </div>
 </template>

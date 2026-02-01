@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="contenedor-footer">
+        <div id="contenedor-footer">
             <div class="brand">🧠
                 <div>
                     <h2>PsicoVibes</h2>
